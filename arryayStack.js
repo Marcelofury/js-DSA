@@ -14,5 +14,5 @@ for(var i = 0; i <= word.length; i++ ){
 }
 
 for (var i = 0; i <= word.length){
-    
+    rword.pop(word[i])
 }
