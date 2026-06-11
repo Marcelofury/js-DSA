@@ -4,7 +4,7 @@
 function mySet(){
    // the var collection will hold the set
 
-   var collections = [];
+   var collection = [];
    //this method will check for the presence of an element and return true or false
    this.has = function(element){
     return (collection.indexOf(element) !== -1)
@@ -79,7 +79,7 @@ this.difference = function(otherSet)
 // this method will test if the set is a subset of a different set
 
 this.subset = function(otherSet){
-    var firstSet = this.values;
+    var firstSet = this.values();
     return firstSet.every(function(value){
         return otherSet.has(value)
     })
@@ -87,12 +87,12 @@ this.subset = function(otherSet){
 
 }
 
-// var setA = new mySet();
-// var setB = new mySet();
+var setA = new mySet();
+var setB = new mySet();
 
-// setA.add('a');
-// setB.add('b');
-// setB.add('c');
-// setB.add('a');
-// setB.add('d');
-// console.log
+setA.add('a');
+setB.add('b');
+setB.add('c');
+setB.add('a');
+setB.add('d');
+console.log(setA.subset(setB))
