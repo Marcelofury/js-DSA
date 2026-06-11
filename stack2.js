@@ -12,7 +12,7 @@ var Stack = function(){
     }
 
     this.pop = function(){
-        if (this.count === 0)
+        if (this.count === 0){
             return undefined;
     }
 
@@ -22,3 +22,15 @@ var Stack = function(){
     delete this.storage[this.count];
     return result;
 }
+
+this.size = function(){
+    return this.count;
+}
+
+// retruns the value at the end of the stack
+this.peek = function(){
+    return this.storage[this.count-1]
+}
+}
+
+var myStack = new Stack();
