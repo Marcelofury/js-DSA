@@ -63,7 +63,18 @@ this.intersection = function(otherSet){
     return intersectionSet;
 }
 
+// this method will return the difference of two sets as a new set
 
-
+this.difference = function(otherSet)
+{
+    var differenceSet = new mySet();
+    var firstSet = this.values();
+    firstSet.forEach (function(e){
+        if(!otherSet.has(e)){
+            differenceSet.add(e)
+        }
+    })
+}
+return differenceSet;
 
 }
