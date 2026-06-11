@@ -96,3 +96,19 @@ setB.add('c');
 setB.add('a');
 setB.add('d');
 console.log(setA.subset(setB))
+console.log(setA.intersection(setB).values())
+console.log(setB.difference(setA).values())
+
+var setC = new Set();
+var setD = new Set();
+
+setC.add('a');
+setC.add('b');
+setC.add('c');
+setC.add('a');
+setC.add('d');
+console.log(setD.values())
+setD.delete('a')
+console.log(setD.has('a'))
+console.log(setD.add('d'))
+
