@@ -50,6 +50,20 @@ this.union = function(otherSet){
     })
     return unionSet;
 }
+// this method will return the intersection of two sets as a new set
+
+this.intersection = function(otherSet){
+    var intersectionSet = new mySet();
+    var firstSet = this.values();
+    firstSet.forEach(function(e){
+        if(otherSet.has(e)){
+            intersectionSet.add(e)
+        };
+    });
+    return intersectionSet;
+}
+
+
 
 
 }
