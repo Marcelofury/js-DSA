@@ -10,17 +10,17 @@ var rword = [];
 
 
 // put letter of word into the stack
-for(var i = 0; i <= word.length; i++ ){
+for(var i = 0; i < word.length; i++ ){
     letters.push(word[i])
 
 }
 
 // pop off the stack in reverse order
-for (var i = 0; i <= word.length){
+for (var i = 0; i < word.length; i++){
     rword+= letters.pop()
 }
 
-if (word === rword){
+if (rword === word){
     console.log( word + 'is a palindrome')
 }
 else{
