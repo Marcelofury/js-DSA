@@ -31,3 +31,12 @@ q.print();
 q.dequeue();
 console.log(q.front());
 q.print();
+
+
+function PriorityQueue(){
+    var collection = [];
+    this.printCollection = function(){
+        (console.log(collection))
+    }
+    this.enqueue =
+}
