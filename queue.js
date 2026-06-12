@@ -67,4 +67,18 @@ function PriorityQueue(){
     this.size = function (){
         return collection.length;
     }
+
+    this.isEmpty = function (){
+        return(collection.length === 0)
+    }
 }
+
+var pq = new PriorityQueue();
+pq.enqueue(['Beau Carnes', 2]);
+pq.enqueue(['Quincy Larson', 3]);
+pq.enqueue(['Ewa Mitulska-wojcik', 1]);
+pq.enqueue(['Briana swift', 2])
+pq.printCollection();
+pq.dequeue();
+pq.front();
+pq.printCollection();
