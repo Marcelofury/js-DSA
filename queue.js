@@ -9,7 +9,11 @@ function Queue(){
         collection.push(element);
 }
 
-this.dequeue = function (){
-    return collection.shift();
-}
+    this.dequeue = function (){
+        return collection.shift();
+    }
+    this.front = function(){
+        return collection[0];
+    }
+    
 }
