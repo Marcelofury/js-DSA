@@ -8,4 +8,8 @@ function Queue(){
     this.enqueue = function(element){
         collection.push(element);
 }
+
+this.dequeue = function (){
+    return collection.shift();
+}
 }
